@@ -98,7 +98,7 @@ DELETE FROM CTE WHERE RowNum > 1;
 --7) Identify the museums with invalid city information in the given dataset
 
 select * from museum
-where city NOT LIKE '[0-9]%'
+where city NOT LIKE '%[A-Za-z]%'
 
 --9) Fetch the top 10 most famous painting subject
 
